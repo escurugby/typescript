@@ -1,6 +1,17 @@
 const carMakers: string[] = ['ford', 'toyota', 'bmw'];
 //if declared empty, needed typing
-const carTest: string[] = [];
+const carMakers2: string[] = [];
 
 const carsByMake = [['f150'], ['corola'], ['camaro']];
+//if declared empty, needed typing
 const carsByMake2: string[][] = [];
+
+//type inference knows that brand is a String
+const brand = carMakers.pop();
+
+//we cannot push elements of other types.
+//carMakers.push(12);
+
+carMakers.map((car: string): string => {
+  return car;
+});

@@ -13,5 +13,10 @@ const brand = carMakers.pop();
 //carMakers.push(12);
 
 carMakers.map((car: string): string => {
-  return car;
+  return car.toUpperCase();
 });
+
+//Flexible Types
+const importantDates: (Date | string)[] = [];
+importantDates.push(new Date());
+importantDates.push('test');
